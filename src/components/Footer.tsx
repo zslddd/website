@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import { MailIcon } from "lucide-react";
+import { MailIcon, YoutubeIcon } from "lucide-react";
 import { GitHubLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
 
 export default function Footer() {
@@ -55,6 +55,16 @@ export default function Footer() {
           >
             <Button variant={"ghost"}>
               <GitHubLogoIcon className="h-4 w-4 md:mr-2" />
+            </Button>
+          </Link>
+          
+          <Link
+            href="https://www.youtube.com/@zslddd"
+            passHref
+            className="text-xs text-muted-foreground hover:text-foreground"
+          >
+            <Button variant={"ghost"}>
+              <YoutubeIcon className="h-4 w-4 md:mr-2" />
             </Button>
           </Link>
         </div>
