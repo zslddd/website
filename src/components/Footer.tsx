@@ -5,21 +5,25 @@ import { MailIcon } from "lucide-react";
 import { GitHubLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
 
 export default function Footer() {
-  // get the current time in UTC+1 time zone
+  // get the current time in UTC-5 time zone
   const [time, setTime] = useState<string>("");
 
   useEffect(() => {
     const interval = setInterval(() => {
       const date = new Date();
-      date.setHours(date.getHours());
-      setTime(
-        date.toLocaleTimeString("en-US", {
-          hour12: false,
-          hour: "numeric",
-          minute: "numeric",
-        }),
-      );
+
+      // Convert to UTC-5 using `toLocaleString` and specifying the timezone
+      const utcMinus5Time = date.toLocaleString("en-US", {
+        timeZone: "America/New_York", // A city in the UTC-5 time zone (like America/New_York without DST)
+        hour12: false,
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric",
+      });
+
+      setTime(utcMinus5Time);
     }, 1000);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -28,8 +32,8 @@ export default function Footer() {
       <div className="container mx-auto flex flex-row items-center justify-between py-6">
         <span className="flex flex-row items-center space-x-4">
           <span className="flex hidden flex-row items-center space-x-2 md:flex">
-            <p className="text-xs text-muted-foreground">Local time:</p>
-            <p className="text-sm font-semibold">{time} UTC-5</p>
+            <p className="text-xs text-muted-foreground">🌐</p>
+            <p className="text-sm font-semibold">Tampa, FL - {time}</p>
           </span>
         </span>
         
