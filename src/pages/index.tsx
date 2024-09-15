@@ -411,7 +411,7 @@ export default function Home() {
               <span className="text-gradient clash-grotesk">talk.</span>
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I don't bite :3
+              I don&apos;t bite :3
             </p>
             <Link href="mailto:me@zsld.space" passHref>
               <Button className="mt-6">Get in touch</Button>
