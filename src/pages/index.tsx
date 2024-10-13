@@ -253,7 +253,7 @@ export default function Home() {
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
             <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-            heya! i am zen, a 14 year old german/filipino developer that currently lives in the united states with experience in programming since 2018. i also studied music professionally at a young age and played piano for a philharmonic orchestra in the philippines.
+            heya! i am zen, a 14 year old german/filipino developer that currently lives in the united states with experience in programming since 2018.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
