@@ -34,14 +34,20 @@ const aboutStats = [
 
 const projects = [
   {
-    title: "Aetherium",
-    description: "Aetherium | The pinnacle of modern Minecraft clients with a seamless blend of cutting-edge features and cherished legacy elements.",
+    title: "PGC Test Tracks | Head Developer",
+    description: "PGC Test Tracks | Enjoy laser-scanned tracks on Roblox with high quality cars: Nordschleife, Circuit de Spa Francorchamps, and Monza",
     image: "/assets/aetheriumclient.png",
-    href: "https://aetherium.club/",
+    href: "https://www.roblox.com/games/77294142959666/",
+  }
+  {
+    title: "Aetherium | Manager",
+    description: "Aetherium (2023-2025) | The pinnacle of modern Minecraft clients with a seamless blend of cutting-edge features and cherished legacy elements.",
+    image: "/assets/aetheriumclient.png",
+    href: "#",
   },
   {
     title: "Aerora",
-    description: "Aerora (INACTIVE) | Fast and affordable game servers and cloud storage",
+    description: "Aerora (2022-2023) | Fast and affordable game servers and cloud storage",
     image: "/assets/aerora.png",
     href: "#",
   },
@@ -200,7 +206,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                a full-time high school student and most-of-the-time-if-im-free developer from the United States with experience in programming since 2018.
+                a game developer and project manager with experience in programming since 2018.
               </p>
             </div>
             <span
@@ -253,7 +259,7 @@ export default function Home() {
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
             <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-            heya! i am zen, a 14 year old german/filipino developer that currently lives in the united states with experience in programming since 2018.
+            heya! I am zen, a 16 year old german/filipino developer. I specialize in Roblox and Unity game development and have been programming since 2018. I also have experience in project management. With several years of experience, I am passionate about building projects, immersive games and constantly pushing the limits of what I can create with what I have on hand.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
