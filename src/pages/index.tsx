@@ -36,7 +36,7 @@ const projects = [
   {
     title: "PGC Test Tracks | Head Developer",
     description: "PGC Test Tracks | Enjoy laser-scanned tracks on Roblox with high quality cars: Nordschleife, Circuit de Spa Francorchamps, and Monza",
-    image: "/assets/aetheriumclient.png",
+    image: "https://tr.rbxcdn.com/180DAY-132ea68dc850cd0a3180c1cd35b11631/768/432/Image/Webp/noFilter",
     href: "https://www.roblox.com/games/77294142959666/",
   }
   {
